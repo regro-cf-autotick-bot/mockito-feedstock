@@ -1,5 +1,5 @@
 {% set name = "mockito" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/kaste/mockito-python/archive/{{ version }}.tar.gz
-  sha256: fe0614d07bf0f762f9b0e7b7183788e80941950315f58dfa2d405415afc9e65a
+  sha256: ff35c630b929904b7226acef85eb78e7bbeb7e907b5e830385db86c2aa9d6e92
 
 build:
   number: 0
