@@ -11,16 +11,16 @@ source:
   sha256: fe0614d07bf0f762f9b0e7b7183788e80941950315f58dfa2d405415afc9e65a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -29,6 +29,7 @@ test:
     - pip
     - pytest
     - numpy
+    - python {{ python_min }}
   source_files:
     - tests/
   commands:
